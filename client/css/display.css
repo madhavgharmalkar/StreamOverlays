@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00ff00;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-size: 4vh;
+    margin: 1vh;
+    margin-top: 2vh;
+
+}
+
+h2 {
+    font-size: 3vh;
+    margin: 1vh;
+}
+
+.bottomthird {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+}
+
+.circle {
+    width: 12.5vw;
+    height: 12.5vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid black;
+    z-index: 10;
+    float: left;
+}
+
+.circle img {
+    width: 100%;
+}
+
+.bottomThird {
+    float: left;
+    width: 50vw;
+    height: 8vw;
+
+    background-color: white;
+    z-index: -1;
+    
+    position: absolute;
+    top: 2.25vw;
+    left: 6.25vw;
+
+    border: 3px solid black;
+}
+
+.textContainer {
+    left: 7.5vw;
+    position: absolute
+}

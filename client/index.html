@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stream Overlay</title>
+    
+    <!-- script dependencies -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="/js/app.js"></script>
+    
+    
+    <!-- css dependencies -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/control.css">
+    
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper black">
+            <div class="container">
+                <a href="#" class="brand-logo">Control Panel</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">Control</a></li>
+                    <li><a href="/display.html">Display</a></li>
+                </ul>
+            </div>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="/">Control</a></li>
+                <li><a href="/display.html">Display</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col s12 m6">
+                <h4>Bottom Third</h4>
+                <div class="row">
+                    <div class="input-field col s12 l6">
+                        <input id="main_text_val" type="text" class="validate">
+                        <label for="main_text_val">Main Text</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <a id="main_text" class="waves-effect waves-light btn send-data"><i class="material-icons left">rotate_right</i>Update Main Text</a>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l6">
+                        <input id="sub_text_val" type="text" class="validate">
+                        <label for="sub_text_val">Sub Text</label>
+                    </div>
+                     <div class="input-field col s12 l6">
+                        <a id="sub_text" class="waves-effect waves-light btn send-data"><i class="material-icons left">rotate_right</i>Update Sub Text</a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
